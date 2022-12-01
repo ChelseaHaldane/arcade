@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Tic-Tac-Toe!</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,600;0,900;1,200&display=swap"
+    rel="stylesheet"
+  />
+</head>
+<body>
+  <h1>Tic-Tac-Toe!</h1>
+  <div id="name-capture-container">
+    <input
+      id="playerName1"
+      type="text"
+      value=""
+      placeholder="Enter player 1 name"
+    />
+    <input
+      id="playerName2"
+      class="hiddenElement"
+      type="text"
+      value=""
+      placeholder="Enter player 2 name"
+    />
+    <button id="player2Btn" class="enterPlayer2">Enter Player 2</button>
+    <button id="startBtn" disabled>Start Game</button>
+  </div>
+  <div id="player-info-container" class="hiddenElement player-info-container">
+    <div id="player-1-info">
+      <h4 id="player-1-info-name"></h4>
+      <ul>
+        <li>Mark: <span id="player-1-info-mark"></span></li>
+        <li>Wins: <span id="player-1-info-wins"></span></li>
+      </ul>
+    </div>
+    <div id="player-2-info">
+      <h4 id="player-2-info-name"></h4>
+      <ul>
+        <li>Mark: <span id="player-2-info-mark"></span></li>
+        <li>Wins: <span id="player-2-info-wins"></span></li>
+      </ul>
+    </div>
+  </div>
+  <div id="end-game-container" class="hiddenElement">
+    <h3 id="winning-message"></h3>
+    <button id="play-again">Play Again</button>
+    <button id="main-menu">Back to Main Menu</button>
+  </div>
+  <div id="board-container">
+    <div id="board-mask"></div>
+    <div class="board">
+      <div id="000000001" class="box"></div>
+      <div id="000000010" class="box"></div>
+      <div id="000000100" class="box"></div>
+      <div id="000001000" class="box"></div>
+      <div id="000010000" class="box"></div>
+      <div id="000100000" class="box"></div>
+      <div id="001000000" class="box"></div>
+      <div id="010000000" class="box"></div>
+      <div id="100000000" class="box"></div>
+    </div>
+  </div>
+  <script src="site.js"></script>
+</body>
